@@ -54,12 +54,16 @@ for more information.
 
 
 *Which method is preferred when writing C++?*
+
 According to the the [Cpp Core Guidelines (C48 & C49)](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-in-class-initializer):
+
 generally, **default member initialization** > **Initialization Lists** > **assignment in constructors**
 
 
 ## Function Overloading
+
 Sometimes you may want to have different parameters for the same functionality.
+
 C++ has the **function overloading** feature - when there are multiple functions
 with the same name, the compiler will **infer which version of the function to use**.
 
@@ -68,7 +72,7 @@ The destructor cleans up memory used by the class, it is called when the class
 object **goes out of scope**, or when the `delete` keyword is used.
 
 
-The destructor of a class or struct is prefixed by ~ followed by the class name. 
+The destructor of a class or struct is prefixed by `~` followed by the class name. 
 
 ```clike
 class Square {
@@ -100,8 +104,9 @@ int main() {
 }
 ```
 
-The destructors of a class is propagated - in the example above,
-when the `Square` class gets destructed the destructor for `position` also gets triggered
+The destructors of a class is propagated -
+
+in the example above,  when the `Square` class gets destructed the destructor for `position` also gets triggered
 because `position` is stack allocated.
 
 In the different example where the members heap allocated with the `new` keyword,
