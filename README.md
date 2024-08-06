@@ -1,13 +1,18 @@
 # C++ features
 
+
 ## Constructors
 The constructor method is called when an object of a class is created. 
 The constructor function should be the **same as the class name**.
 
+
 ### Member variable initialization
 The member variable of a class can be initialized with several ways during the
-creation of a class object. See [cppreference](https://en.cppreference.com/w/cpp/language/constructor)
-for more information.
+creation of a class object.
+
+
+See [cppreference](https://en.cppreference.com/w/cpp/language/constructor) for more information.
+
 
 1. **Default Member initialization** - member fields are assigned to constant values
     ```clike
@@ -55,7 +60,9 @@ for more information.
 
 *Which method is preferred when writing C++?*
 
-According to the the [Cpp Core Guidelines (C48 & C49)](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-in-class-initializer):
+
+According to the [Cpp Core Guidelines (C48 & C49)](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rc-in-class-initializer):
+
 
 generally, **default member initialization** > **Initialization Lists** > **assignment in constructors**
 
@@ -66,6 +73,7 @@ Sometimes you may want to have different parameters for the same functionality.
 
 C++ has the **function overloading** feature - when there are multiple functions
 with the same name, the compiler will **infer which version of the function to use**.
+
 
 ## Destructor
 The destructor cleans up memory used by the class, it is called when the class
